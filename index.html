@@ -3,163 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Store - E-Commerce Product Page</title>
+    <title>Tech Store</title>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Tech Store</h1>
-        <nav>
-            <a href="#">Home</a> |
-            <a href="#">Products</a> |
-            <a href="#">Deals</a> |
-            <a href="#">Contact</a>
-        </nav>
-        <hr>
-    </header>
-
-    <!-- Product Section -->
-    <section>
-        <h2>HP OMEN 16 Gaming Laptop</h2>
-        <img src="https://via.placeholder.com/300x200" alt="HP OMEN 16 Gaming Laptop">
-        <p><strong>Price:</strong> ₹1,09,999</p>
-        <p><strong>Discount:</strong> 20% OFF</p>
-        <p><strong>Availability:</strong> In Stock</p>
-    </section>
+    <center>
+        <h1>TECH STORE</h1>
+        <p>Your Online Gadget Shopping Destination</p>
+    </center>
 
     <hr>
 
-    <!-- Product Specifications -->
-    <section>
-        <h2>Product Specifications</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Specification</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Processor</td>
-                <td>Intel Core i7 13th Gen</td>
-            </tr>
-            <tr>
-                <td>RAM</td>
-                <td>16GB DDR5</td>
-            </tr>
-            <tr>
-                <td>Storage</td>
-                <td>1TB SSD</td>
-            </tr>
-            <tr>
-                <td>Graphics</td>
-                <td>NVIDIA GeForce RTX 4060</td>
-            </tr>
-            <tr>
-                <td>Display</td>
-                <td>16.1 inch Full HD, 165Hz</td>
-            </tr>
-            <tr>
-                <td>Battery</td>
-                <td>83Wh</td>
-            </tr>
-        </table>
-    </section>
+    <h2>HP OMEN 16 Gaming Laptop</h2>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/HP_Omen_15-en1000.png" 
+         alt="HP Omen Laptop" 
+         width="400">
+
+    <p><b>Price:</b> ₹1,09,999</p>
+    <p><b>Discount:</b> 20% OFF</p>
+    <p><b>Availability:</b> In Stock</p>
 
     <hr>
 
-    <!-- Features -->
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li>RGB Backlit Keyboard</li>
-            <li>Fast Charging Support</li>
-            <li>Advanced Cooling System</li>
-            <li>High Refresh Rate Display</li>
-            <li>Premium Gaming Performance</li>
-        </ul>
-    </section>
+    <h2>Product Specifications</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Specification</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Processor</td>
+            <td>Intel Core i7 13th Gen</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>16GB DDR5</td>
+        </tr>
+        <tr>
+            <td>Storage</td>
+            <td>1TB SSD</td>
+        </tr>
+        <tr>
+            <td>Graphics</td>
+            <td>RTX 4060</td>
+        </tr>
+        <tr>
+            <td>Display</td>
+            <td>16.1 inch Full HD 165Hz</td>
+        </tr>
+    </table>
 
     <hr>
 
-    <!-- Description -->
-    <section>
-        <h2>Product Description</h2>
-        <p>
-            The HP OMEN 16 Gaming Laptop delivers powerful gaming performance with Intel Core i7
-            processor and NVIDIA RTX graphics. Designed for gamers and programmers, it offers fast
-            performance, immersive visuals, and efficient cooling for extended usage.
-        </p>
-    </section>
+    <h2>Key Features</h2>
+    <ul>
+        <li>RGB Keyboard</li>
+        <li>Advanced Cooling</li>
+        <li>Fast Charging</li>
+        <li>Gaming Performance</li>
+    </ul>
 
     <hr>
 
-    <!-- Purchase Form -->
-    <section>
-        <h2>Purchase Product</h2>
-        <form>
-            <label for="name">Full Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+    <h2>Purchase Form</h2>
 
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+    <form>
+        Name:<br>
+        <input type="text"><br><br>
 
-            <label for="quantity">Quantity:</label><br>
-            <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+        Email:<br>
+        <input type="email"><br><br>
 
-            <label for="color">Choose Color:</label><br>
-            <select id="color" name="color">
-                <option>Shadow Black</option>
-                <option>Silver</option>
-            </select><br><br>
+        Quantity:<br>
+        <input type="number" min="1"><br><br>
 
-            <label for="address">Delivery Address:</label><br>
-            <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+        Address:<br>
+        <textarea rows="4" cols="40"></textarea><br><br>
 
-            <label>Payment Method:</label><br>
-            <input type="radio" id="cod" name="payment">
-            <label for="cod">Cash on Delivery</label><br>
+        Payment Method:<br>
+        <input type="radio" name="pay"> UPI<br>
+        <input type="radio" name="pay"> Card<br>
+        <input type="radio" name="pay"> Cash on Delivery<br><br>
 
-            <input type="radio" id="upi" name="payment">
-            <label for="upi">UPI Payment</label><br>
-
-            <input type="radio" id="card" name="payment">
-            <label for="card">Credit/Debit Card</label><br><br>
-
-            <input type="submit" value="Buy Now">
-            <input type="reset" value="Clear">
-        </form>
-    </section>
+        <input type="submit" value="Buy Now">
+    </form>
 
     <hr>
 
-    <!-- Customer Reviews -->
-    <section>
-        <h2>Customer Reviews</h2>
-        <p>★★★★★ Excellent gaming performance and smooth display.</p>
-        <p>★★★★ Great laptop for programming and gaming, battery could be better.</p>
-        <p>★★★★★ Fast performance and premium build quality.</p>
-    </section>
+    <h2>Customer Reviews</h2>
+    <p>★★★★★ Excellent gaming laptop</p>
+    <p>★★★★ Good battery backup</p>
 
     <hr>
 
-    <!-- Related Products -->
-    <section>
-        <h2>Related Products</h2>
-        <ul>
-            <li><a href="#">Gaming Mouse</a></li>
-            <li><a href="#">Wireless Headset</a></li>
-            <li><a href="#">Laptop Cooling Pad</a></li>
-            <li><a href="#">Mechanical Keyboard</a></li>
-        </ul>
-    </section>
+    <h2>Related Products</h2>
+
+    <table>
+        <tr>
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Computer_mouse.jpg" width="150">
+                <p>Gaming Mouse</p>
+            </td>
+
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Headphones_1.jpg" width="150">
+                <p>Headphones</p>
+            </td>
+
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Mechanical_keyboard_2.jpg" width="150">
+                <p>Keyboard</p>
+            </td>
+        </tr>
+    </table>
 
     <hr>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Tech Store. All Rights Reserved.</p>
-        <p>Contact: support@techstore.com</p>
-    </footer>
+    <center>
+        <p>© 2026 Tech Store</p>
+    </center>
 
 </body>
 </html>

@@ -3,127 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Store</title>
+    <title>Counter App</title>
 </head>
 <body>
 
     <center>
-        <h1>TECH STORE</h1>
-        <p>Your Online Gadget Shopping Destination</p>
+        <h1>Counter Application</h1>
+        <hr width="300">
+
+        <h2 id="count">0</h2>
+
+        <button onclick="increase()">Increment</button>
+        <button onclick="decrease()">Decrement</button>
+        <button onclick="resetCounter()">Reset</button>
     </center>
 
-    <hr>
+    <script>
+        let count = 0;
 
-    <h2>HP OMEN 16 Gaming Laptop</h2>
+        function increase() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/HP_Omen_15-en1000.png" 
-         alt="HP Omen Laptop" 
-         width="400">
+        function decrease() {
+            count--;
+            document.getElementById("count").innerText = count;
+        }
 
-    <p><b>Price:</b> ₹1,09,999</p>
-    <p><b>Discount:</b> 20% OFF</p>
-    <p><b>Availability:</b> In Stock</p>
-
-    <hr>
-
-    <h2>Product Specifications</h2>
-
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Specification</th>
-            <th>Details</th>
-        </tr>
-        <tr>
-            <td>Processor</td>
-            <td>Intel Core i7 13th Gen</td>
-        </tr>
-        <tr>
-            <td>RAM</td>
-            <td>16GB DDR5</td>
-        </tr>
-        <tr>
-            <td>Storage</td>
-            <td>1TB SSD</td>
-        </tr>
-        <tr>
-            <td>Graphics</td>
-            <td>RTX 4060</td>
-        </tr>
-        <tr>
-            <td>Display</td>
-            <td>16.1 inch Full HD 165Hz</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Key Features</h2>
-    <ul>
-        <li>RGB Keyboard</li>
-        <li>Advanced Cooling</li>
-        <li>Fast Charging</li>
-        <li>Gaming Performance</li>
-    </ul>
-
-    <hr>
-
-    <h2>Purchase Form</h2>
-
-    <form>
-        Name:<br>
-        <input type="text"><br><br>
-
-        Email:<br>
-        <input type="email"><br><br>
-
-        Quantity:<br>
-        <input type="number" min="1"><br><br>
-
-        Address:<br>
-        <textarea rows="4" cols="40"></textarea><br><br>
-
-        Payment Method:<br>
-        <input type="radio" name="pay"> UPI<br>
-        <input type="radio" name="pay"> Card<br>
-        <input type="radio" name="pay"> Cash on Delivery<br><br>
-
-        <input type="submit" value="Buy Now">
-    </form>
-
-    <hr>
-
-    <h2>Customer Reviews</h2>
-    <p>★★★★★ Excellent gaming laptop</p>
-    <p>★★★★ Good battery backup</p>
-
-    <hr>
-
-    <h2>Related Products</h2>
-
-    <table>
-        <tr>
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Computer_mouse.jpg" width="150">
-                <p>Gaming Mouse</p>
-            </td>
-
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Headphones_1.jpg" width="150">
-                <p>Headphones</p>
-            </td>
-
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Mechanical_keyboard_2.jpg" width="150">
-                <p>Keyboard</p>
-            </td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <center>
-        <p>© 2026 Tech Store</p>
-    </center>
+        function resetCounter() {
+            count = 0;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
 
 </body>
 </html>
